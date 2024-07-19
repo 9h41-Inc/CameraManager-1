@@ -1721,7 +1721,7 @@ open class CameraManager: NSObject, AVCapturePhotoCaptureDelegate, AVCaptureFile
             } else if authorizationStatus == AVAuthorizationStatus.notDetermined {
                 return .notDetermined
             } else {
-                _show(NSLocalizedString("Camera access denied", comment: ""), message: NSLocalizedString("You need to go to settings app and grant acces to the camera device to use it.", comment: ""))
+                _show(NSLocalizedString("Camera access denied", comment: ""), message: NSLocalizedString("You need to go to settings app and grant access to the camera device to use it.", comment: ""))
                 return .accessDenied
             }
         } else {
